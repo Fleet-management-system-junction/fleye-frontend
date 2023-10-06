@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Righteous', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: 'Righteous', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.45px;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
