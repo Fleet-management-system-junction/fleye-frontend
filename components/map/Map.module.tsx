@@ -31,6 +31,8 @@ export default function Home() {
       ],
     });
 
+    map.addControl(new mapboxgl.FullscreenControl());
+
     initializeMap(mapboxgl, map, dataContent);
 
     dataContent?.features?.forEach((marker, i) => {
@@ -44,7 +46,7 @@ export default function Home() {
          : 30;
        el.className = "marker";
  
-       el.style.backgroundImage = `url(${iconsMapper[marker.geometry.type]})`;
+       el.style.backgroundImage = `url(${iconsMapper[marker?.geometry?.type]})`;
        el.style.width = `${width}px`;
        el.style.height = `${height}px`;
        el.style.backgroundSize = "100%";
@@ -54,7 +56,9 @@ export default function Home() {
 
          setSelectedIndex(i);
          map.zoomIn();
- 
+        
+         console.log('>>>>>>>>>>>>>>>>><<', coordinates);
+         
          new mapboxgl.Popup()
            .setLngLat(coordinates)
            .setHTML("hello world")
@@ -66,7 +70,7 @@ export default function Home() {
     })
 
     setMap(map);
-  }, []);
+  },[]);
 
   useEffect(() => {
     if (pageIsMounted && dataContent) {
