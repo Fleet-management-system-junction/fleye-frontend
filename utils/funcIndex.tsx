@@ -49,6 +49,6 @@ export const whySectionData = [
     icon: <Graph />,
     title: "Data Analysis",
     description:
-      "Fleye employs cutting-edge GPS technology, delivering real-time accuracy and reliability to efficiently manage your fleet directly with precision",
+      "Fleye's data analysis and AI-driven load management ensure optimal resource allocation and pricing strategies, maximizing cost savings",
   },
 ];

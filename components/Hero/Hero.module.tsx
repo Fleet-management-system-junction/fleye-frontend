@@ -19,7 +19,7 @@ const Hero = () => {
         id="myVideo"
         src={"/hero.mp4"}
       />
-      <div className="absolute hero__gradient gap-[50px] py-[30px] top-0 left-0 h-full justify-center px-[100px] text-center text-[white] flex flex-col">
+      <div className="absolute w-full hero__gradient gap-[50px] py-[30px] top-0 left-0 h-full justify-center px-[100px] text-center text-[white] flex flex-col">
         <h1 className="title text-[40px] ">
           Precision Meets Vision, Keeping an Eye on Your World.{" "}
         </h1>

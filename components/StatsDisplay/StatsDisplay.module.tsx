@@ -16,7 +16,7 @@ const StatsDisplay = ({
 }) => {
   return (
     <section id="analytics" className="w-full flex flex-col gap-[10px]">
-      <h1 className="text-[50px] uppercase text-main__color font-bold">Data Analysing</h1>
+      <h1 className="text-[50px] title uppercase text-main__color font-bold">Data Analysing</h1>
       <p className="text text-main__color">Export my data to CSV ?? <span className="underline font-bold cursor-pointer">here</span></p>
       <div className="w-full flex gap-[10px]">
         <div className="flex flex-col gap-[10px]">

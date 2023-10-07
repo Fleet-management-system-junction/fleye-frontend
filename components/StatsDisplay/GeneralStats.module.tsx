@@ -16,7 +16,7 @@ const GeneralStats = ({
 }) => {
   return (
     <section id="analytics" className="w-full flex flex-col gap-[10px]">
-      <h1 className="text-[50px] uppercase text-main__color font-bold">
+      <h1 className="text-[50px] title uppercase text-main__color font-bold">
         Data Analysing
       </h1>
       <p className="text text-main__color">
