@@ -1,5 +1,5 @@
-import time
 from globals import topics, uav_data, queue, socketio, WAIT
+from controllers.websocket_controller import WebsocketController
 
 class MQTTController():
 
@@ -24,16 +24,13 @@ class MQTTController():
                 print(f"connected to {topic}")
 
 
-
-
     @staticmethod
     def handle_topic_0(queue, data, socketio):
         if (queue.__len__() == 0):
             queue.append((data, None))
         elif  queue[-1][0] == None:
             queue[-1] = (data, queue[-1][1]) 
-            socketio.emit("data", {"long": queue[-1][0], "lat": queue[-1][1]})
-            time.sleep(WAIT)
+            WebsocketController.emit({"long": queue[-1][0], "lat": queue[-1][1]})
             queue.pop(-1)
 
     @staticmethod
@@ -42,9 +39,7 @@ class MQTTController():
             queue.append((None, data))
         elif  queue[-1][1] == None:
             queue[-1] = (queue[-1][0], data) 
-            socketio.emit("data", {"long": queue[-1][0], "lat": queue[-1][1]})
-            time.sleep(WAIT)
-            print("emitted", queue[-1])
+            WebsocketController.emit({"long": queue[-1][0], "lat": queue[-1][1]})
             queue.pop(-1)
    
     @staticmethod
