@@ -5,10 +5,9 @@ import React from "react";
 import ArrowsDown from "@/public/ArrowsDown";
 
 const Hero = () => {
-
   const handleArrowsClicked = () => {
-    document.getElementById('services')?.scrollIntoView({behavior: "smooth"});
-  }
+    document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="w-full relative">
@@ -22,11 +21,12 @@ const Hero = () => {
       />
       <div className="absolute hero__gradient gap-[50px] py-[30px] top-0 left-0 h-full justify-center px-[100px] text-center text-[white] flex flex-col">
         <h1 className="title text-[40px] ">
-          Slogon here Slogan Here Slogan here Slogan here Slogan here
+          Precision Meets Vision, Keeping an Eye on Your World.{" "}
         </h1>
 
         <p className="text-[24px] title font-[400]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          Guiding fleets with precision, every journey becomes a symphony of
+          efficiency and success{" "}
         </p>
 
         <Link
@@ -36,7 +36,10 @@ const Hero = () => {
           Get The Product
         </Link>
 
-        <div onClick={() => handleArrowsClicked()} className="mx-auto cursor-pointer">
+        <div
+          onClick={() => handleArrowsClicked()}
+          className="mx-auto cursor-pointer"
+        >
           <ArrowsDown />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { iconsMapper } from "@/utils/constants";
 import mapboxgl from "mapbox-gl";
 
-export function addDataLayer(map: any, data: any) {
+export function addDataLayer(map: any, data: any, changeSelected) {
   if (!map.getSource("dcmusic.live")) {
     map.addSource("dcmusic.live", {
       type: "geojson",
@@ -19,7 +19,7 @@ export function addDataLayer(map: any, data: any) {
       element.remove();
     });
     
-    data.forEach((marker: any) => {
+    data.forEach((marker: any, i: number) => {
       const el = document.createElement("div");
       const width = marker.properties.iconSize
         ? marker.properties.iconSize[0]
@@ -34,24 +34,22 @@ export function addDataLayer(map: any, data: any) {
       el.style.height = `${height}px`;
       el.style.backgroundSize = "100%";
 
-      // el.addEventListener("click", (e: any) => {
-      //   var coordinates = marker.geometry.coordinates.slice();
+      el.addEventListener("click", (e: any) => {
+        var coordinates = marker.geometry.coordinates.slice();
 
-      //   setSelectedIndex(i);
-      //   map.zoomIn();
+        changeSelected(i);
+        map.zoomIn();
 
-      //   new mapboxgl.Popup()
-      //     .setLngLat(coordinates)
-      //     .setHTML("hello world")
-      //     .addTo(map);
-      // });
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML("hello world")
+          .addTo(map);
+      });
       new mapboxgl.Marker(el).setLngLat(marker.geometry?.coordinates).addTo(map);
       // map.panTo(data[1].geometry?.coordinates);
     });
 
 
-    console.log("ch: ", data);
     map.getSource("dcmusic.live").setData(data[0]);
-    console.log(map);
   }
 }

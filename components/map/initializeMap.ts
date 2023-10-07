@@ -1,8 +1,3 @@
-import { DataContext } from "@/context/CardDataProvider";
-import { useChangeContext } from "@/hooks/useChangeContext";
-import { iconsMapper } from "@/utils/constants";
-import { useContext } from "react";
-
 export function initializeMap(mapboxgl: any, map: any, data: any) {
   map.on("style.load", () => {
     const layers = map.getStyle().layers;

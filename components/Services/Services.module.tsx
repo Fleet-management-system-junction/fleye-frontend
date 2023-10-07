@@ -10,7 +10,7 @@ const Services = () => {
       </h1>
 
       <h4 className="title mt-[30px] text-[50px] font-normal text-submain__color">
-        We provide a system I don&apos;t know the rest of the sentence
+        Steering Transportation Companies Toward Enhanced Efficiency And Unwavering Profitability 
       </h4>
 
       <div className="mt-[-80px] w-full flex justify-between items-center">

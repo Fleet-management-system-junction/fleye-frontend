@@ -28,20 +28,14 @@ export default function Home() {
     let map = new mapboxgl.Map({
       container: "my-map",
       style: "mapbox://styles/mapbox/streets-v11",
-      // center: [-77.02, 38.887],
       zoom: 2.5,
       pitch: 45,
-      // maxBounds: [
-      //   [-77.875588, 38.50705], // Southwest coordinates
-      //   [-76.15381, 39.548764], // Northeast coordinates
-      // ],
     });
 
     map.addControl(new mapboxgl.FullscreenControl());
 
     initializeMap(mapboxgl, map, dataContent);
 
-    console.log("content", dataContent)
     dataContent?.forEach((marker, i) => {
       // Create a DOM element for each marker.
       const el = document.createElement("div");
@@ -75,11 +69,13 @@ export default function Home() {
     });
 
     setMap(map);
-  },[]);
+  }, []);
 
   useEffect(() => {
     if (pageIsMounted && dataContent && Map?._loaded) {
-      addDataLayer(Map, dataContent);
+      addDataLayer(Map, dataContent, (newIndex) => {
+        setSelectedIndex(newIndex);
+      });
     }
   }, [dataContent]);
 

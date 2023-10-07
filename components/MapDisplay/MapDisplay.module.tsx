@@ -39,9 +39,9 @@ const MapDisplay = () => {
         </div>
 
         {selectedIndex !== null ? (
-          <DataCard {...dataContent.features[selectedIndex]} />
+          <DataCard {...dataContent[selectedIndex]} />
         ) : (
-          <DataCard />
+          <DataCard  />
         )}
       </div>
       <div className="h-[668px] relative basis-[50%]">
