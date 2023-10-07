@@ -15,6 +15,10 @@ export function addDataLayer(map: any, data: any) {
     });
   } else {
 
+    map._markers.forEach(element => {
+      element.remove();
+    });
+    
     data.forEach((marker: any) => {
       const el = document.createElement("div");
       const width = marker.properties.iconSize
@@ -46,6 +50,7 @@ export function addDataLayer(map: any, data: any) {
     });
 
 
+    console.log("ch: ", data);
     map.getSource("dcmusic.live").setData(data[0]);
     console.log(map);
   }
