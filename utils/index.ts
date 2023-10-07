@@ -4,6 +4,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.0317, 38.9146] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 1",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Black Cat",
         cluster: false,
@@ -14,6 +21,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "truck", coordinates: [-77.023982, 38.878824] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 2",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Pearl Street Warehouse",
         cluster: false,
@@ -24,6 +38,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "bus", coordinates: [-77.0423, 38.9224] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 3",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Songbyrd Cafe",
         cluster: false,
@@ -34,6 +55,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "Train", coordinates: [-77.0317, 38.9028] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 4",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "The Hamilton",
         cluster: false,
@@ -44,6 +72,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-76.9859, 38.9144] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 5",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "City Winery",
         cluster: false,
@@ -54,6 +89,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.0241, 38.8787] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 6",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Union Stage",
         cluster: false,
@@ -64,6 +106,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "truck", coordinates: [-77.0292, 38.8965] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 7",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Warner Theatre",
         cluster: false,
@@ -74,6 +123,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "bus", coordinates: [-77.0242, 38.9168] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 8",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "DC9 Nightclub",
         cluster: false,
@@ -84,6 +140,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "bus", coordinates: [-76.9869, 38.9] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 9",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Pie Shop",
         cluster: false,
@@ -94,6 +157,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.0237, 38.9179] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 10",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "9:30 Club",
         cluster: false,
@@ -104,6 +174,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.0211, 38.9154] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 11",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "The Howard Theatre",
         cluster: false,
@@ -114,6 +191,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.0277, 38.9172] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car  12",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "U Street Music Hall",
         cluster: false,
@@ -124,6 +208,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-76.9726, 38.9198] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 13",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Echo Stage",
         cluster: false,
@@ -134,6 +225,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "bus", coordinates: [-77.0291, 38.9171] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car 14",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Lincoln Theatre",
         cluster: false,
@@ -144,6 +242,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "bus", coordinates: [-77.0255, 38.8804] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "The Anthem",
         cluster: false,
@@ -154,6 +259,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.0557, 38.8958] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "The Kennedy Center",
         cluster: false,
@@ -164,6 +276,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-76.995134, 38.881679] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Miracle Theatre",
         cluster: false,
@@ -174,6 +293,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.0221, 38.8951] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Hill Country",
         cluster: false,
@@ -184,6 +310,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "car", coordinates: [-77.007433, 38.87301] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Nationals Park",
         cluster: false,
@@ -194,6 +327,13 @@ export const data = {
     {
       type: "Feature",
       geometry: { type: "bus", coordinates: [-77.02088, 38.898125] },
+      youtubeURL: "https://www.youtube.com/embed/R93ce4FZGbc?si=GAJEgZf0AHmIY7sr",
+      title: "this is a car",
+      payload: [
+        { key: "Car number:", value: "11223 112 12" },
+        { key: "Localisation:", value: "36.7785611.562 - Hidra - Alger" },
+        { key: "Velocity:", value: "45km/h" },
+      ],
       properties: {
         title: "Capital One Arena",
         cluster: false,

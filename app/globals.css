@@ -10,27 +10,28 @@
   margin: 0;
 }
 
-.title {
-  font-family: 'Righteous', sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
+body{
+  scroll-behavior: smooth;
 }
 
-.subtitle {
+.title {
   font-family: 'Righteous', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .text {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.45px;
+}
+
+.hero__gradient {
+  background: linear-gradient(0deg, #DAFFFB 0%, rgba(218, 255, 251, 0.00) 100%);
+}
+
+.bg__gradient{
+  background-image: linear-gradient(to top, #dafffb, #e3feff, #f0fdff, #fafdff, #ffffff);
+}
+
+.footer__gradient {
+  background: linear-gradient(180deg, #010103 0%, #010103 0%, #DAFFFB 0.01%, #010105 100%);
 }
 
 :root {
