@@ -1,3 +1,6 @@
+import { iconsMapper } from "@/utils/constants";
+import mapboxgl from "mapbox-gl";
+
 export function addDataLayer(map: any, data: any) {
   if (!map.getSource("dcmusic.live")) {
     map.addSource("dcmusic.live", {
@@ -11,7 +14,39 @@ export function addDataLayer(map: any, data: any) {
       },
     });
   } else {
-    map.getSource("dcmusic.live").setData(data);
-  }
 
+    data.forEach((marker: any) => {
+      const el = document.createElement("div");
+      const width = marker.properties.iconSize
+        ? marker.properties.iconSize[0]
+        : 30;
+      const height = marker.properties.iconSize
+        ? marker.properties.iconSize[1]
+        : 30;
+      el.className = "marker";
+
+      el.style.backgroundImage = `url(${iconsMapper[marker.properties.name]})`;
+      el.style.width = `${width}px`;
+      el.style.height = `${height}px`;
+      el.style.backgroundSize = "100%";
+
+      // el.addEventListener("click", (e: any) => {
+      //   var coordinates = marker.geometry.coordinates.slice();
+
+      //   setSelectedIndex(i);
+      //   map.zoomIn();
+
+      //   new mapboxgl.Popup()
+      //     .setLngLat(coordinates)
+      //     .setHTML("hello world")
+      //     .addTo(map);
+      // });
+      new mapboxgl.Marker(el).setLngLat(marker.geometry?.coordinates).addTo(map);
+      // map.panTo(data[1].geometry?.coordinates);
+    });
+
+
+    map.getSource("dcmusic.live").setData(data[0]);
+    console.log(map);
+  }
 }
