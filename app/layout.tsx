@@ -1,10 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
 import CardDataProvider from "@/context/CardDataProvider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Freye",
@@ -32,7 +29,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={inter.className}>
+      <body>
         <CardDataProvider>{children}</CardDataProvider>
       </body>
     </html>
